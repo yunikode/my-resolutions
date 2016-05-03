@@ -3,12 +3,12 @@ import { mount } from 'react-mounter'
 
 import { MainLayout } from './layouts/MainLayout'
 
-import App from '../App'
+import ResolutionsWrapper from './resolutions/ResolutionsWrapper'
 
 FlowRouter.route('/', {
   action() {
     mount(MainLayout, {
-      content: (<App />)
+      content: (<ResolutionsWrapper />)
     })
   }
 })
